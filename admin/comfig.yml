@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "pages"
+    label: "Σελίδες"
+    files:
+      - name: "homepage"
+        label: "Αρχική Σελίδα"
+        file: "index.html"
+        fields:
+          - { label: "Τίτλος", name: "title", widget: "string" }
+          - { label: "Περιγραφή", name: "description", widget: "text" }
